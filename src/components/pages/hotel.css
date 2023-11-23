@@ -92,17 +92,20 @@
 .hotelDetails {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   gap: 20px;
   margin-top: 20px;
 }
 
 .hotelDetailsTexts {
   flex: 3;
+  /* flex-direction: column; */
 }
 
 .hotelDesc {
   font-size: 18px;
   margin-top: 20px;
+  margin-bottom: 20px;
   color: #3A3B3C;
   text-align: center;
 }
@@ -129,7 +132,7 @@
   font-weight: 300;
   font-size: 50px;
   color: black;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 15px;
   text-align: center;
 }
