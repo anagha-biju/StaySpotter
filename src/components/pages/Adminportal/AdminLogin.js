@@ -23,7 +23,7 @@ const LoginSignup = () => {
           "content-type":"application/json"
         },
       };
-      let resp=await fetch("http://localhost:5500/User/admin",headers);
+      let resp=await fetch("https://projectbackend-yoxw.onrender.com/User/admin",headers);
       let result=await resp.json();
       console.log(result);
       if(result.status === "200")  {

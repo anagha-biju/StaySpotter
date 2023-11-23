@@ -37,7 +37,7 @@ const AddHotel=()=>{
     data.append("price",price);
     data.append('features',features)
     data.append('rating',rating)
-    await fetch("http://localhost:5500/Hotel/upload",{
+    await fetch("https://projectbackend-yoxw.onrender.com/Hotel/upload",{
       method:"POST",
       body:data,
     })

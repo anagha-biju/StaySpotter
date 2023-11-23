@@ -49,7 +49,7 @@ const LoginSignup = () => {
           "content-type":"application/json"
         },
       };
-      let resp=await fetch("http://localhost:5500/User/login",headers);
+      let resp=await fetch("https://projectbackend-yoxw.onrender.com/User/login",headers);
       let result=await resp.json();      
       if(result.Msg === "Login Sucessfully"){
         alert(`${result.Msg}`)

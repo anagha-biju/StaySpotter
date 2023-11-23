@@ -22,7 +22,7 @@ const List = () => {
 
   const getHotels = async () => {
     const city=destination;
-    let resp = await fetch(`http://localhost:5500/Hotel/getHotels?city=${city}&min=${min}&max=${max}`);
+    let resp = await fetch(`https://projectbackend-yoxw.onrender.com/getHotels?city=${city}&min=${min}&max=${max}`);
     let result = await resp.json();
     setHotels(result); 
     handlequerys()

@@ -14,7 +14,7 @@ function Hoteltype() {
         setvars(false)
     },[])
     const handleClick=async()=>{
-        let resp = await fetch(`http://localhost:5500/Hotel/getAllhotels?type=${hoteltype}`);
+        let resp = await fetch(`https://projectbackend-yoxw.onrender.com/Hotel/getAllhotels?type=${hoteltype}`);
       let result = await resp.json();
       setHotels(result)
     }

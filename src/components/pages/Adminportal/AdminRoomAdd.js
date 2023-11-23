@@ -37,7 +37,7 @@ const AddRoom = () => {
                 "content-type": "application/json"
             },
         };
-        let resp = await fetch(`http://localhost:5500/rooms/addRoom/${hotelId}`, headers);
+        let resp = await fetch(`https://projectbackend-yoxw.onrender.com/rooms/addRoom/${hotelId}`, headers);
         let result = await resp.json();
         console.log(result)
         if(result.status==="sucess"){

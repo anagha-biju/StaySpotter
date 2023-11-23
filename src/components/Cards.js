@@ -11,7 +11,7 @@ function Cards() {
   },[])
   
   const getHotels = async () => {
-    let resp = await fetch("http://localhost:5500/Hotel/getAllHotels");
+    let resp = await fetch("https://projectbackend-yoxw.onrender.com/Hotel/getAllHotels");
     let result = await resp.json();
     setFeatures(result.slice(9,12));
     setHotel(result.slice(0,3));

@@ -54,7 +54,7 @@ function Reserve({ setOpen, hotelId }) {
         try {
           await Promise.all(
             selectedRooms.map((roomId) => {
-              const res = axios.put(`http://localhost:5500/rooms/avability/${roomId}`, {
+              const res = axios.put(`https://projectbackend-yoxw.onrender.com/rooms/avability/${roomId}`, {
                 dates: alldates,
               });
               return res.data;

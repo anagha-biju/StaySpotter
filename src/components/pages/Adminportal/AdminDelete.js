@@ -19,7 +19,7 @@ const navigate=useNavigate();
   const [response, setResponse] = useState('');
 
   const getHotels = async () => {
-    fetch(`http://localhost:5500/Hotel/deleteHotel?name=${hotelName}&city=${hotelCity}&type=${hotelType}`, {
+    fetch(`https://projectbackend-yoxw.onrender.com/Hotel/deleteHotel?name=${hotelName}&city=${hotelCity}&type=${hotelType}`, {
       method: 'DELETE',
     })
       .then(res => res.json()) // or res.json()
