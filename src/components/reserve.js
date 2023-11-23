@@ -37,7 +37,8 @@ function Reserve({ setOpen, hotelId }) {
         getHotel()
     }, [rooms])
     const getHotel = async () => {
-        let resp = await fetch(`https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/Hotel/room/${hotelId}`);
+        // let resp = await fetch(`https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/Hotel/room/${hotelId}`);
+        let resp = await fetch(`https://stayspotterback.onrender.com//Hotel/room/${hotelId}`);
         let result = await resp.json();
         setRooms(result)
     };
@@ -54,7 +55,8 @@ function Reserve({ setOpen, hotelId }) {
         try {
           await Promise.all(
             selectedRooms.map((roomId) => {
-              const res = axios.put(`https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/rooms/avability/${roomId}`, {
+            //   const res = axios.put(`https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/rooms/avability/${roomId}`, {
+                const res = axios.put(`https://stayspotterback.onrender.com/rooms/avability/${roomId}`, {
                 dates: alldates,
               });
               return res.data;

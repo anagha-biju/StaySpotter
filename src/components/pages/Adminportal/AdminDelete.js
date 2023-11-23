@@ -19,7 +19,7 @@ const navigate=useNavigate();
   const [response, setResponse] = useState('');
 
   const getHotels = async () => {
-    fetch(`https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/Hotel/deleteHotel?name=${hotelName}&city=${hotelCity}&type=${hotelType}`, {
+    fetch(`https://stayspotterback.onrender.com/Hotel/deleteHotel?name=${hotelName}&city=${hotelCity}&type=${hotelType}`, {
       method: 'DELETE',
     })
       .then(res => res.json()) // or res.json()

@@ -29,7 +29,8 @@ const LoginSignup = () => {
           "content-type":"application/json"
         },
       };
-      let resp=await fetch("https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/User/register",headers);
+      // let resp=await fetch("https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/User/register",headers);
+      let resp=await fetch("https://stayspotterback.onrender.com/User/register",headers);
       let result=await resp.json();
       if(result.Status === "200"){
         alert("You Register Successfully")
@@ -49,7 +50,8 @@ const LoginSignup = () => {
           "content-type":"application/json"
         },
       };
-      let resp=await fetch("https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/User/login",headers);
+      // let resp=await fetch("https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/User/login",headers);
+      let resp=await fetch("https://stayspotterback.onrender.com/User/login",headers);
       let result=await resp.json();      
       if(result.Msg === "Login Sucessfully"){
         alert(`${result.Msg}`)

@@ -37,7 +37,7 @@ const AddHotel=()=>{
     data.append("price",price);
     data.append('features',features)
     data.append('rating',rating)
-    await fetch("https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/Hotel/upload",{
+    await fetch("https://stayspotterback.onrender.com/Hotel/upload",{
       method:"POST",
       body:data,
     })
