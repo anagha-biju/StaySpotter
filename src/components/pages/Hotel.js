@@ -51,7 +51,7 @@ const Hotel = () => {
     }
   })
   const getHotel = async () => {
-    let resp = await fetch(`https://projectbackend-yoxw.onrender.com/Hotel/getHotel/${hotelid[2]}`);
+    let resp = await fetch(`https://stay-spotterbackend-1srfzmu1b-anagha-bijus-projects.vercel.app/Hotel/getHotel/${hotelid[2]}`);
     let result = await resp.json();
     setHotels(result); 
     setPhotos(result.photos)
